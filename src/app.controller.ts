@@ -10,8 +10,4 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-  @Get('/data')
-  getHdata(@Res() res: Response): any {
-    return res.status(HttpStatus.CREATED).json({name: 'gfdsg', lastName: 'gfdsgf'});
-  }
 }
